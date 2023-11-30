@@ -26,7 +26,7 @@ class InputReceiver:
 
                 if not valid:
                     print("CPF inválido")
-                    print("Formato para inserir CPF -", self.validator.expected_format())
+                    print("Formato para inserir CPF -", each_validator.expected_format())
                     input_received = input("Digite o CPF: ")
                     break
 

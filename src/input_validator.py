@@ -1,13 +1,9 @@
 from validator import Validator
 
-class InputValidator:
+class InputValidator(Validator):
     # Single-responsability: validate input
     # Open-closed: can be extended by subclasses that override the validate method,
-        # without modifying the original class.
-
-    def __init__(self, expected_format: str = "XXX.XXX.XXX-XX") -> None:
-        self._expected_format = expected_format
-        
+        # without modifying the original class.        
     def validate(self, input):
         if len(input) != 14:
             return False

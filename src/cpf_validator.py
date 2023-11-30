@@ -5,10 +5,7 @@ class CPFValidator(Validator):
     # Single-responsability: validate CPF
     # Open-closed: can be extended by subclasses that override the validate method,
         # without modifying the original class.
-    def __init__(self) -> None:
-        pass
-    
-    def validate_CPF(self, cpf: str) -> bool:
+    def validate(self, cpf: str) -> bool:
         cpf_digits = [int(digit) for digit in cpf if digit.isnumeric()]
 
         # Check if CPF has all digits equal
