@@ -1,5 +1,7 @@
 # Atividade-Pratica
- Atividade de Qualidade de Software para a disciplina de Engenharia de Software
+ Atividade de Qualidade de Software para a disciplina de Engenharia de Software. O objetivo da atividade é refatorar o código presente no arquivo `original_code.py` dividindo-o em classes, respeitando as boas práticas de OO e os princípios de Single Responsability e Open-Closed.
+
+ Após refatoração do código (presente agora na pasta `.\src`), foi confeccionada uma suíte de testes (presente na pasta `.\test`) que, como pedido, cobre 90% do código desenvolvido.
 
 # Participantes
 - Ana Julia Lima
@@ -7,3 +9,26 @@
 - Iago Riveiro Santos Dutra
 - Luan Rodrigues de Carvalho
 - Luís Henrique Domingues Bueno
+
+# Cobertura de Testes
+
+Para verificar a cobertura de testes, foi realizado o teste padrão do `coverage.py` seguindo os seguintes passos:
+- Instale o módulo com a linha de comando:
+
+        pip install coverage
+
+- Na pasta raiz do repositório, rode o arquivo principal:
+
+        coverage run .\main.py 
+
+    E insira algum CPF válido, ou simplemente interrompa o programa;
+
+- Por fim, gere um report em terminal com o comando:
+
+        coverage report
+
+    Ou para melhor visualização, rode o comando:
+
+        coverage html
+
+    E abra o arquivo `index.html` que será gerado no diretório `.\htmlcov`
