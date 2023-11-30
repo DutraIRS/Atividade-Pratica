@@ -1,6 +1,7 @@
 import numpy as np
+from validator import Validator
 
-class CPFValidator:
+class CPFValidator(Validator):
     # Single-responsability: validate CPF
     # Open-closed: can be extended by subclasses that override the validate method,
         # without modifying the original class.

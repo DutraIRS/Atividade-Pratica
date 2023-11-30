@@ -1,3 +1,5 @@
+from validator import Validator
+
 class InputValidator:
     # Single-responsability: validate input
     # Open-closed: can be extended by subclasses that override the validate method,
