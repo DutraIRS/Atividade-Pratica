@@ -26,8 +26,9 @@ class InputReceiver:
 
                 if not valid:
                     print("CPF inválido")
-                    print("Formato para inserir CPF -", each_validator.expected_format())
+                    print("Formato para inserir CPF -", each_validator.expected_format)
                     input_received = input("Digite o CPF: ")
                     break
 
         self.input_received = input_received
+        print("CPF válido, obrigado por oferecer seus dados pessoais!")
