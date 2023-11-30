@@ -2,10 +2,25 @@ import numpy as np
 from validator import Validator
 
 class CPFValidator(Validator):
-    # Single-responsability: validate CPF
-    # Open-closed: can be extended by subclasses that override the validate method,
-        # without modifying the original class.
+    """ Single-responsability: validate CPF
+
+    Open-closed: Can be extended by subclasses that override the validate method,
+        without modifying the original class.
+    """
     def validate(self, cpf: str) -> bool:
+        """ Validates the CPF number according to the following rules:
+            - CPF must have 11 digits
+            - CPF must have only digits
+            - CPF must not have all digits equal
+            - CPF first verifier digit must be valid
+            - CPF second verifier digit must be valid
+
+        :param cpf: CPF number
+        :type cpf: str
+        :return: True if CPF is valid, False otherwise
+        :rtype: bool
+        """
+        # Check if all CPF digits are numeric       
         cpf_digits = [int(digit) for digit in cpf if digit.isnumeric()]
 
         # Check if CPF has all digits equal
