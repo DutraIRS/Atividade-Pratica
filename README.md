@@ -23,8 +23,6 @@ Para verificar a cobertura de testes, foi realizado o teste padrão do `coverage
         coverage run -a .\test\test_input_validator.py
         coverage run -a .\test\test_input_receiver.py
 
-    E insira algum CPF válido, ou simplemente interrompa o programa;
-
 - Por fim, gere um report em terminal com o comando:
 
         coverage report
