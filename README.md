@@ -17,9 +17,11 @@ Para verificar a cobertura de testes, foi realizado o teste padrão do `coverage
 
         pip install coverage
 
-- Na pasta raiz do repositório, rode o arquivo principal:
+- Na pasta raiz do repositório, rode as seguintes linhas de comando para processar os testes:
 
-        coverage run .\main.py 
+        coverage run -a .\test\test_cpf_validator.py
+        coverage run -a .\test\test_input_validator.py
+        coverage run -a .\test\test_input_receiver.py
 
     E insira algum CPF válido, ou simplemente interrompa o programa;
 
